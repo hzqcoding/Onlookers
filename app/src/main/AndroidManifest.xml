@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hzq.onlookers">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".GuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".NewsGson.MainActivity" />
+        <activity android:name=".NewsGson.DetailActivity" />
+        <activity android:name=".FunctionActivity" />
+        <activity android:name=".Notes.NotesActivity" />
+        <activity
+            android:name=".Notes.WriteDownActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Notes.BriefActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".BaseActivity"></activity>
+    </application>
+
+</manifest>
